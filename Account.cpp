@@ -15,15 +15,15 @@ public:
 
 int Account::input()
 {
-    int input;
+    string input;
 
     cout << "\nEnter 1 for credit amount in account and 2 for withdrawl amount from acount : ";
     cin >> input;
-    if (input == 1)
+    if (input == "1")
     {
         credit();
     }
-    else if (input == 2)
+    else if (input == "2")
     {
         withdraw();
     }
@@ -58,10 +58,10 @@ void Account::withdraw()
 
 int Account::output()
 {
-    int x;
-    cout << "Enter 1 for exit(or any integer for continue) : ";
+    string x;
+    cout << "Enter 1 for exit(or any other value for continue) : ";
     cin >> x;
-    if (x == 1)
+    if (x == "1")
     {
         return 0;
     }
